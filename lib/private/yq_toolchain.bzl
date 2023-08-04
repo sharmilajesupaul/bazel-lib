@@ -383,7 +383,8 @@ resolved_toolchain = rule(
 
 load(":defs.bzl", "resolved_toolchain")
 
-resolved_toolchain(name = "resolved_toolchain", visibility = ["//visibility:public"])
+package(default_visibility = ["//visibility:public"])
+resolved_toolchain(name = "resolved_toolchain")
 
 """
 
